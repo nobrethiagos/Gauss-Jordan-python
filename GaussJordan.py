@@ -24,7 +24,7 @@ def multiplica(B, C, numLin, numCol, linC, const):
     B[i][linC] /= const
   return B, C
 
-def fatorizar(C):
+def fatorar(C):
   numLin, numCol = np.shape(C)
   B = identidade(numLin)
   precisaMuitoPivot = False
@@ -66,7 +66,7 @@ C[3] = [1, 4, 14, 104, 41, 5, 4, 3]
 
 print("A:")
 print(C)
-B, C = fatorizar(C)
+B, C = fatorar(C)
 print("")
 print("B:")
 print(B)
