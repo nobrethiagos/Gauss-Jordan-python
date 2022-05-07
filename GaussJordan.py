@@ -98,6 +98,9 @@ def fatorar(C):
           """
           print("Deixando o pivot com o valor 1: dividindo a linha",lin+1,"por",C[lin][col])    
           print("")
+          """
+          multiplica(B, C, numLin, numCol, lin, 1/C[lin][col])
+          """
           print("B:")
           print(B)
           print("")
@@ -105,7 +108,6 @@ def fatorar(C):
           print(C)
           print("")
           """
-          multiplica(B, C, numLin, numCol, lin, 1/C[lin][col])
         for i in range(numLin):         
           if i != lin and C[i][col] != 0:
             """
