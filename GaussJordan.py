@@ -137,9 +137,11 @@ def fatorar(C):
     print("Limpando linhas nulas:",linNula)
     print("")
     """
+    j = 0
     for i in linNula:
-      C = np.delete(C,i-1,0)
-      B = np.delete(B,i-1,1)
+      C = np.delete(C,i-1-j,0)
+      B = np.delete(B,i-1-j,1)
+      j += 1
   """
   print("B:") 
   print(B)
